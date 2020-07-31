@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Button from '../Button';
 
 export const LogoImage = styled.img`
     max-width: 168px;
@@ -33,31 +32,19 @@ export const Menuwrapper = styled.nav`
         height: 40px;
         justify-content: center;
     }
-`;
 
-export const ButtonLink = styled(Button)`
-    border: 1px solid var(--white);
-    border-radius: 4px;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 16px 24px;
-    text-decoration: none;
-    transition: opacity .3;
-    &:hover,
-    &:focus{
-        opacity: .5;
+    body {
+        --bodyPaddingTop: 94px;
+        padding-top: var(--bodyPaddingTop);
     }
-
     @media (max-width: 800px) {
-        background: var(--primary);
-        border: 0;
-        bottom: 0;
-        color: var(--white);
-        left: 0;
-        outline: 0;
-        position: fixed;
-        right: 0;
-        text-align: center;
+        .Menu {
+            height: 40px;
+            justify-content: center;
+        }
+        body {
+            --bodyPaddingTop: 40px;
+            padding-top: var(--bodyPaddingTop);
+        }
     }
 `;
